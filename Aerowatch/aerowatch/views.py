@@ -143,7 +143,7 @@ def search(request,filter,icao):
         begin = int(datetime(now.year, now.month, now.day, 0, 0, 0).timestamp())
         end = int(datetime(now.year, now.month, now.day, 23, 59, 59).timestamp())
         username = "herosubby"
-        password = "Ayosubomi123"
+        password = "password123"
 
         url= f"https://opensky-network.org/api/flights/arrival?airport={icao}&begin={begin}&end={end}"
 
@@ -186,7 +186,7 @@ def search(request,filter,icao):
         begin = int(datetime(now.year, now.month, now.day, 0, 0, 0).timestamp())
         end = int(datetime(now.year, now.month, now.day, 23, 59, 59).timestamp())
         username = "herosubby"
-        password = "Ayosubomi123"
+        password = "password123"
 
         url= f"https://opensky-network.org/api/flights/departure?airport={icao}&begin={begin}&end={end}"
         response = requests.get(url, auth=(username, password))
@@ -230,7 +230,7 @@ def route(request,d_icao,a_icao):
     begin = int(datetime(now.year, now.month, now.day, 0, 0, 0).timestamp())
     end = int(datetime(now.year, now.month, now.day, 23, 59, 59).timestamp())
     username = "herosubby"
-    password = "Ayosubomi123"
+    password = "password123"
     
     url= f"https://opensky-network.org/api/flights/departure?airport={d_icao}&begin={begin}&end={end}"
     response = requests.get(url, auth=(username, password))
